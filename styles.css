@@ -98,7 +98,7 @@ dialog{border:1px solid #8d8d85;border-radius:12px;background:var(--paper);paddi
 .post-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
 .post-shot{display:block;width:100%;padding:0;background:#1b1b1a;border:1px solid var(--line);border-radius:7px;overflow:hidden;position:relative;transition:transform .2s,box-shadow .2s}
 .post-shot:hover{transform:translateY(-3px);box-shadow:4px 6px 0 #2828200b}
-.post-shot img{width:100%;height:auto;aspect-ratio:812/1418;object-fit:cover;object-position:center top}
+.post-shot img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:center top}
 .post-strip figcaption{font-size:14px;color:var(--muted);margin-top:9px}
 .post-shot::after{content:'\FF0B';position:absolute;right:9px;bottom:9px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-size:17px;line-height:1;color:var(--ink);background:#fbfbf9d9;border:1px solid #aaa9a2;border-radius:5px;opacity:0;transition:opacity .2s}
 .post-shot:hover::after,.post-shot:focus-visible::after{opacity:1}
@@ -119,8 +119,7 @@ dialog{border:1px solid #8d8d85;border-radius:12px;background:var(--paper);paddi
 .post-strip{grid-template-columns:1fr;max-width:360px;margin:0 auto;gap:26px}
 /* Jedna kolumna - kadry moga miec wlasne proporcje, ale zawsze jawne,
    inaczej obrazy z loading="lazy" maja zerowa wysokosc do czasu wczytania. */
-.post-shot img{aspect-ratio:812/1418}
-.post-strip figure:nth-child(3) .post-shot img{aspect-ratio:944/1285}
+.post-shot img{aspect-ratio:1/1}
 .newsletter-shot img{aspect-ratio:1547/1521}
 .post-shot::after{opacity:1}
 }

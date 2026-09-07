@@ -34,16 +34,16 @@ dialog{border:1px solid #8d8d85;border-radius:12px;background:var(--paper);paddi
 .cafe-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-bottom:38px}
 .cafe-photo,.cafe-card,.course-shot{display:block;width:100%;padding:0;background:var(--soft);border:1px solid var(--line);border-radius:7px;overflow:hidden}
 .cafe-photo img{width:100%;aspect-ratio:9/16;object-fit:cover}
-.cafe-photo-grid figcaption,.cafe-card-grid figcaption,.aroma-detail-grid figcaption{font-size:14px;color:var(--muted);margin-top:9px}
+.cafe-photo-grid figcaption,.cafe-card-photo figcaption,.aroma-detail-grid figcaption{font-size:14px;color:var(--muted);margin-top:9px}
 .cafe-loyalty{display:grid;grid-template-columns:1fr 1.35fr;gap:38px;align-items:center;margin-top:36px}
-.cafe-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
-.cafe-card img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center 40%}
+.cafe-card-photo{width:100%}
+.cafe-card img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;object-position:center 40%}
 .aroma-film .aroma-carousel-shot img{aspect-ratio:16/9;object-fit:cover;object-position:center top}
 .aroma-film figcaption{font-size:14px;color:var(--muted);margin-top:12px}
 .aroma-detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px}
 .course-shot img{width:100%;height:auto}
-@media(max-width:820px){.folder-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.cafe-photo-grid{gap:14px}.cafe-loyalty{grid-template-columns:1fr;gap:24px}.cafe-card-grid{max-width:540px}.aroma-detail-grid{grid-template-columns:1fr;gap:22px}}
-@media(max-width:600px){.folder-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.cafe-photo-grid{grid-template-columns:1fr;max-width:360px;margin:0 auto 28px}.cafe-photo-grid figure{margin-bottom:12px}.cafe-card-grid{gap:10px}.cafe-photo-grid figcaption,.cafe-card-grid figcaption,.aroma-detail-grid figcaption{font-size:14px}.aroma-film video{border-radius:5px}}
+@media(max-width:820px){.folder-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.cafe-photo-grid{gap:14px}.cafe-loyalty{grid-template-columns:1fr;gap:24px}.aroma-detail-grid{grid-template-columns:1fr;gap:22px}}
+@media(max-width:600px){.folder-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.cafe-photo-grid{grid-template-columns:1fr;max-width:360px;margin:0 auto 28px}.cafe-photo-grid figure{margin-bottom:12px}.cafe-photo-grid figcaption,.cafe-card-photo figcaption,.aroma-detail-grid figcaption{font-size:14px}}
 
 @media print{body{background:white}.desktop-label,.desktop-footer,.site-header,.browser-bar,.scroll-progress,.case-actions,.text-button,.pill{display:none}.browser-window{margin:0;border:0;box-shadow:none}.section-pad{break-inside:avoid}dialog{display:none}}
 
@@ -79,12 +79,11 @@ dialog{border:1px solid #8d8d85;border-radius:12px;background:var(--paper);paddi
 }
 
 @media(max-width:820px){
-.cafe-card-grid{width:100%;max-width:460px;margin-inline:auto}
+.cafe-card-photo{max-width:460px;margin-inline:auto}
 }
 
 @media(max-width:600px){
-/* One card per row: the print is unreadable at half a phone width. */
-.cafe-card-grid{grid-template-columns:1fr;width:100%;max-width:360px;margin-inline:auto;gap:18px}
+.cafe-card-photo{max-width:360px;margin-inline:auto}
 /* Touch has no hover, so keep the enlarge badge visible. */
 .cafe-photo::after,.cafe-card::after,.course-shot::after{opacity:1}
 .reading-copy h4{font-size:18px;margin-top:30px}

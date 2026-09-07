@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portfolio",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8934", "--directory", "/Users/kingula/Library/Mobile Documents/com~apple~CloudDocs/Kinga Porfolio/strona"],
+      "port": 8934
+    }
+  ]
+}

@@ -38,7 +38,7 @@ dialog{border:1px solid #8d8d85;border-radius:12px;background:var(--paper);paddi
 .cafe-loyalty{display:grid;grid-template-columns:1fr 1.35fr;gap:38px;align-items:center;margin-top:36px}
 .cafe-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
 .cafe-card img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center 40%}
-.aroma-film video{display:block;width:100%;aspect-ratio:1920/1054;border:1px solid var(--line);border-radius:8px;background:var(--soft)}
+.aroma-film .aroma-carousel-shot img{aspect-ratio:16/9;object-fit:cover;object-position:center top}
 .aroma-film figcaption{font-size:14px;color:var(--muted);margin-top:12px}
 .aroma-detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px}
 .course-shot img{width:100%;height:auto}

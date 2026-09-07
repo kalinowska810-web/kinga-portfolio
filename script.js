@@ -135,6 +135,13 @@ const postCarousels = {
     alt: index => 'Beata Kotecka - slajd ' + index + ' z 7, post „Lato się kończy. Te przepisy zostają”',
     caption: 'Prawdziwa karuzela opublikowana na Instagramie. Przewijaj strzałkami, kropkami albo gestem.',
     title: 'Beata Kotecka / post - Lato się kończy. Te przepisy zostają'
+  },
+  aroma: {
+    count: 4,
+    image: index => 'assets/aroma-trend/carousel/' + String(index).padStart(2, '0') + '.jpg',
+    alt: index => ['Strona kursu Ekspert Opalania', 'Spis treści kursu', 'Lekcja o standardzie obsługi klienta', 'Przykładowy quiz w kursie'][index - 1] + ', slajd ' + index + ' z 4',
+    caption: 'Wybrane ekrany z kursu udostępnianego klientom Aroma Trend. Przewijaj strzałkami, kropkami albo gestem.',
+    title: 'Aroma Trend / podgląd kursu Ekspert Opalania'
   }
 };
 document.querySelectorAll('[data-carousel]').forEach(button => {
